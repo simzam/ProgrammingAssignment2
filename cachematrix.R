@@ -1,8 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
-# START by copying the example in the assignment text
+# function for contructing matrix containing its own inverse (and thus solution)
 makeCacheMatrix <- function(x = matrix()) {
         library(matlib)
         m <- NULL
@@ -18,9 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 getinv = getinv)
 }
 
-
-## Write a short comment describing this function
-
+## trying to get cached matrix, if it isn't stored the function will calculate it
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getinv()
